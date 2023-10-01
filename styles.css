@@ -1,0 +1,52 @@
+/*Global*/
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'AR One Sans', sans-serif;
+}
+
+/*Navbar*/
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.name {
+    font-size: 2rem;
+    cursor: default;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 1.75rem;
+    gap: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li:hover {
+    color: grey;
+    padding-bottom: 5px;
+    border-bottom: 1px solid grey;
+}
+
+.nav-links a:hover {
+    color: grey;
+}
+
+
