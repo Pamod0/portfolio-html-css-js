@@ -54,6 +54,9 @@ a {
 section {
     padding-top: 4vh;
     height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
 }
 
 /* Hero */
@@ -61,15 +64,44 @@ section {
 #hero{
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 5rem;
+    height: 80vh;
 }
+
+.picture {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+}
+
+.highlight {
+    align-self: center;
+    text-align: center;
+}
+
+.highlight .name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.highlight p {
+    font-weight: 600;
+    text-align: center;
+  }
 
 .socials {
     display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 
-.hero #socials-img {
-    /**/
-}
+.socials .socials-img {
+    cursor: pointer;
+    height: 2rem;
+  }
+  
+
 
 
