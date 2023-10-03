@@ -16,10 +16,20 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Text */
+
+.small-text {
+  color: #FEE715;
+}
+
+p {
+  color: #555555;
+}
+/*
 p {
   color: rgb(85, 85, 85);
 }
-
+*/
 /* TRANSITION */
 
 a,
@@ -82,7 +92,18 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 85vh;
+  height: 83vh;
+}
+
+.arrow-0 {
+  position: relative;
+  right: -27rem;
+  top: 41rem;
+}
+
+.arrow-container {
+  display: flex;
+  height: 2vh;
 }
 
 .picture {
@@ -90,6 +111,10 @@ section {
   width: 400px;
   height: 400px;
   margin: auto 0;
+}
+
+.my-picture {
+  border-radius: 50%;
 }
 
 .highlight {
@@ -143,7 +168,7 @@ section {
 
 .btn-1,
 .btn-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #101820 0.1rem solid;
 }
 
 .btn-1:hover,
@@ -153,12 +178,12 @@ section {
 
 .btn-2,
 .btn-1:hover {
-  background: rgb(53, 53, 53);
+  background: #101820;
   color: white;
 }
 
 .btn-2:hover {
-  background: rgb(0, 0, 0);
+  background: #101820;
 }
 
 .btn-1 {
@@ -221,10 +246,10 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #FBEAEB;
+  background: #101820;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: #101820 0.1rem solid;
+  border-color: #101820;
   text-align: center;
 }
 
@@ -246,12 +271,12 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#skills {
   position: relative;
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: #FEE715;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -291,7 +316,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: #FBEAEB;
+  background: #101820;
 }
 
 .project-img {
@@ -302,12 +327,13 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
+  color: #FEE715;
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: #101820;
+  border-color: #FEE715;
+  background-color: #FEE715;
 }
 
 /* CONTACT */
