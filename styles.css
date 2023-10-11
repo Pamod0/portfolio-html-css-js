@@ -1,6 +1,7 @@
 /*Global*/
 
 @import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;700&family=Young+Serif&display=swap');
 
 * {
   margin: 0;
@@ -22,18 +23,18 @@ html {
   color: #FEE715;
 }
 
+.small-text-black {
+  color: black;
+  font-weight: 600;
+}
+
 p {
   color: #555555;
 }
-/*
-p {
-  color: rgb(85, 85, 85);
-}
-*/
+
 /* TRANSITION */
 
-a,
-.btn {
+a, .btn {
   transition: all 300ms ease;
 }
 
@@ -212,10 +213,10 @@ section {
   font-size: 3rem;
   text-align: center;
 }
-
-.section-container {
+/*
+.section-container-2 {
   display: flex;
-}
+}*/
 
 .about-containers {
   gap: 2rem;
@@ -232,9 +233,22 @@ section {
 .about-details-container {
   display: flex;
 }
-
+/*
 .about-pic {
   border-radius: 2rem;
+}
+*/
+
+.text-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  padding: 1.5rem;
+  /*background: #101820;*/
+  border-radius: 2rem;
+  border: #101820 0.3rem solid;
+  border-color: #101820;
+  text-align: center;
 }
 
 .arrow {
@@ -243,10 +257,20 @@ section {
   bottom: 2.5rem;
 }
 
+.details-container-0 {
+  padding: 1.5rem;
+  flex: 1;
+  /*background: #101820;*/
+  border-radius: 2rem;
+  border: #101820 0.3rem solid;
+  border-color: #101820;
+  text-align: center;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #101820;
+  /*background: #101820;*/
   border-radius: 2rem;
   border: #101820 0.1rem solid;
   border-color: #101820;
@@ -269,7 +293,7 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
 #skills {
   position: relative;
@@ -286,6 +310,17 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 60vh;
+}
+
+.details-container-1 {
+  padding: 1.5rem;
+  flex: 1;
+  background: #101820;
+  border-radius: 2rem;
+  border: #101820 0.1rem solid;
+  border-color: #101820;
+  text-align: center;
 }
 
 .article-container {
@@ -314,6 +349,12 @@ article .icon {
   position: relative;
 }
 
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: #101820;
@@ -334,6 +375,12 @@ article .icon {
   color: #101820;
   border-color: #FEE715;
   background-color: #FEE715;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  color: #FEE715;
+  background-color: #101820;
 }
 
 /* CONTACT */

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Welocme to My Portfolio</title>
 </head>
 <body>
   <nav id="navbar">
@@ -26,8 +26,12 @@
       <h1 class="name">Pamod Peiris</h1>
       <p class="role">Full-Stack Developer</p>
       <div class="hero-btns">
-        <button class="btn btn-1">My CV</button>
-        <button class="btn btn-2">Contact Me</button>
+        <button class="btn btn-1" onclick="window.open('./assets/resume.pdf')">
+          My CV
+        </button>
+        <button class="btn btn-2" onclick="location.href='#contact'">
+          Contact Me
+        </button>
       </div>
       <div class="socials">
         <img src="./assets/linkedin.png" alt="" class="socials-img" 
@@ -49,44 +53,49 @@
   </section>
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
-    <h1 class="text">About Me</h1>
+    <h1 class="text">About Me</h1><br><br>
     <div class="section-container">
-      <!--<div class="picture">
-        <img
-          src="./assets/about-pic.png"
-          alt="Profile picture"
-          class="about-pic"
-        />
-      </div> -->
       <div class="about-details-container">
         <div class="about-containers">
-          <div class="details-container">
-            <img
-              src="./assets/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3 class="small-text">Experience</h3>
-            <p class="small-text">2+ years <br />Frontend Development</p>
-          </div>
-          <div class="details-container">
+          <div class="details-container-0">
             <img
               src="./assets/education.png"
               alt="Education icon"
               class="icon"
             />
-            <h3 class="small-text">Education</h3>
-            <p class="small-text">B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            <h3 class="small-text-black">Education</h3>
+            <p class="small-text-black">B.Sc. Computer Engineering (UG)</p>
+          </div>
+          <div class="details-container-0">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3 class="small-text-black">Experience</h3>
+            <p class="small-text-black">
+              1+ years of experience in web development <br>
+              with a strong focus on front-end and back-end
+              technologies.
+            </p>
           </div>
         </div>
         <div class="text-container">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-            reprehenderit et laborum, rem, dolore eum quod voluptate
-            exercitationem nobis, nihil esse debitis maxime facere minus sint
-            delectus velit in eos quo officiis explicabo deleniti dignissimos.
-            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-            reiciendis ea magnam? Nulla, impedit fuga!
+          <p class="small-text-black">
+            I am driven by a love for coding and problem-solving, 
+            constantly seeking opportunities to expand my skill set 
+            and apply my knowledge to real-world projects. As a web developer, 
+            I've had the privilege of diving into the ever-evolving realms of 
+            HTML, CSS, JavaScript, and beyond, exploring innovative ways to bring 
+            ideas to life on the web.
+          </p><br>
+          <p class="small-text-black">
+            My goal is not just to build websites and applications, 
+            but to craft seamless and user-centric digital solutions that 
+            leave a lasting impression. I'm excited about the prospect of 
+            collaborating with experienced professionals, learning from 
+            their expertise, and contributing my enthusiasm and dedication 
+            to a dynamic team.
           </p>
         </div>
       </div>
@@ -103,7 +112,7 @@
     <h1 class="text">Skills</h1>
     <div class="experience-details-container">
       <div class="about-containers">
-        <div class="details-container">
+        <div class="details-container-1">
           <h2 class="experience-sub-title">Frontend Development</h2>
           <div class="article-container">
             <article>
@@ -135,7 +144,7 @@
                 class="icon"
               />
               <div>
-                <h3 class="small-text">SASS</h3>
+                <h3 class="small-text">JavaScript</h3>
                 <p class="small-text">Intermediate</p>
               </div>
             </article>
@@ -146,7 +155,18 @@
                 class="icon"
               />
               <div>
-                <h3 class="small-text">JavaScript</h3>
+                <h3 class="small-text">React</h3>
+                <p class="small-text">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/check.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="small-text">Angular</h3>
                 <p class="small-text">Basic</p>
               </div>
             </article>
@@ -158,23 +178,12 @@
               />
               <div>
                 <h3 class="small-text">TypeScript</h3>
-                <p class="small-text">Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/check.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3 class="small-text">Material UI</h3>
                 <p class="small-text">Intermediate</p>
               </div>
             </article>
           </div>
         </div>
-        <div class="details-container">
+        <div class="details-container-1">
           <h2 class="experience-sub-title">Backend Development</h2>
           <div class="article-container">
             <article>
@@ -195,8 +204,19 @@
                 class="icon"
               />
               <div>
+                <h3 class="small-text">MongoDB</h3>
+                <p class="small-text">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/check.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
                 <h3 class="small-text">Node JS</h3>
-                <p class="small-text">Intermediate</p>
+                <p class="small-text">Basic</p>
               </div>
             </article>
             <article>
@@ -207,6 +227,17 @@
               />
               <div>
                 <h3 class="small-text">Express JS</h3>
+                <p class="small-text">Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/check.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3 class="small-text">Linux</h3>
                 <p class="small-text">Intermediate</p>
               </div>
             </article>
@@ -235,7 +266,7 @@
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="text">Projects</h1>
-    <div class="experience-details-container">
+    <div class="projects-container">
       <div class="about-containers">
         <div class="details-container color-container">
           <div class="article-container">
@@ -245,20 +276,22 @@
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
+          <h2 class="experience-sub-title project-title">Gas-N-Go</h2>
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onclick="window.open('https://github.com/Pamod0/fuel_app')"
             >
               Github
             </button>
+            <!--
             <button
               class="btn btn-color-2 project-btn"
               onclick="location.href='https://github.com/'"
             >
               Live Demo
             </button>
+            -->
           </div>
         </div>
         <div class="details-container color-container">
@@ -269,17 +302,17 @@
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <h2 class="experience-sub-title project-title">Shopping Cart</h2>
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onclick="window.open('https://github.com/Pamod0/shopping-cart-mobile-responsive')"
             >
               Github
             </button>
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onclick="window.open('https://add-to-cart-ae188f.netlify.app/')"
             >
               Live Demo
             </button>
@@ -293,17 +326,17 @@
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <h2 class="experience-sub-title project-title">Product Landing Page</h2>
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onclick="window.open('https://github.com/Pamod0/product-landing-page')"
             >
               Github
             </button>
             <button
               class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onclick="window.open('https://delightful-travesseiro-e4ecb9.netlify.app/')"
             >
               Live Demo
             </button>
