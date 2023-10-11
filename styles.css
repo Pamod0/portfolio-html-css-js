@@ -246,7 +246,7 @@ section {
   padding: 1.5rem;
   /*background: #101820;*/
   border-radius: 2rem;
-  border: #101820 0.3rem solid;
+  border: #101820 0.2rem solid;
   border-color: #101820;
   text-align: center;
 }
@@ -262,7 +262,7 @@ section {
   flex: 1;
   /*background: #101820;*/
   border-radius: 2rem;
-  border: #101820 0.3rem solid;
+  border: #101820 0.2rem solid;
   border-color: #101820;
   text-align: center;
 }
